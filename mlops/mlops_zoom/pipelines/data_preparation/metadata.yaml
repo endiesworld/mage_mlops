@@ -1,0 +1,62 @@
+blocks:
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: mlops_zoom/data_loaders/working_ingest.py
+  downstream_blocks:
+  - working_ingest_time_series_bar_chart_m8
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: working_ingest
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: working_ingest
+cache_block_output_in_memory: false
+callbacks: []
+concurrency_config: {}
+conditionals: []
+created_at: '2024-06-01 02:50:07.452508+00:00'
+data_integration: null
+description: mlops_zoom data preparation class.
+executor_config: {}
+executor_count: 1
+executor_type: null
+extensions: {}
+name: Data preparation
+notification_config: {}
+remote_variables_dir: null
+retry_config: {}
+run_pipeline_in_one_process: false
+settings:
+  triggers: null
+spark_config: {}
+tags:
+- project_1_mage_mlops
+type: python
+uuid: data_preparation
+variables_dir: /home/src/mage_data/mlops_zoom
+widgets:
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    chart_type: time series bar chart
+    time_interval: original
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: working_ingest_time series bar chart_m8
+  retry_config: null
+  status: executed
+  timeout: null
+  type: chart
+  upstream_blocks:
+  - working_ingest
+  uuid: working_ingest_time_series_bar_chart_m8

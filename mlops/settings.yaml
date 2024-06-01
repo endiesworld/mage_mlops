@@ -1,4 +1,6 @@
 projects:
+  mlops_zoom:
+    path: mlops_zoom
   unit_0_setup: {}
   unit_1_data_preparation: {}
   unit_2_training: {}
